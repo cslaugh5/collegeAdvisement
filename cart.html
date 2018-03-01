@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>"Cart"</title>
+<link rel="stylesheet" href="/cart.css">
+<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet"> 
+</head>
+<body>
+
+<nav>
+<button onclick="window.location.href='/shop.html'">Back to Shop</button>
+</nav>
+
+<!-- v-cloak hides any un-compiled data bindings until the Vue instance is ready. -->
+
+<form id="main" v-cloak>
+
+    <h1>Cart</h1>
+
+    <ul>
+        <!-- Loop through the services array, assign a click handler, and set or
+             remove the "active" css class if needed -->
+        <li v-for="service in services" v-on:click="toggleActive(service)" v-bind:class="{ 'active': service.active}">
+            <!-- Display the name and price for every entry in the array .
+                Vue.js has a built in currency filter for formatting the price -->
+            {{service.name}} <span>{{service.price | currency}}</span>
+        </li>
+    </ul>
+
+    <div class="total">
+        <!-- Calculate the total price of all chosen services. Format it as currency. -->
+        Total: <span>{{total() | currency}}</span>
+    </div>
+
+</form>
+<br>
+
+<footer>
+       <a class="github" href="https://github.com/cslaugh5/collegeAdvisement">GitHub</a>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+<script src="cart.js"></script>
+</body>
+</html>

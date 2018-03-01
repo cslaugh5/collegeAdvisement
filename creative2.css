@@ -1,0 +1,159 @@
+h1 {
+	border-top: 5px solid #18CDCA;
+	border-bottom: 5px solid #18CDCA;
+	text-align: center;
+	color: #292C44;
+	font-family: 'Shadows Into Light', cursive;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+
+h2 {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+h2.entertainment {
+	text-align: center;
+}
+
+h3 {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+#get-quote {
+	display: block;
+	margin: 0 auto;
+}
+
+p.home {
+	text-align: center;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+img.home {
+	width: 60%;
+}
+
+hr {
+	color: #FF5349;
+	border-width: 2px;
+	border-style: solid;
+	width: 60%;
+}
+body {
+	background-color: #F0F0F1;
+	color: #292C44;
+}
+
+img {
+	border-radius: 8px;
+	display:block;
+	margin:0 auto;
+}
+
+ review p {
+ 	padding-top: 1%;
+ 	padding-left: 30%;
+ 	padding-right: 30%;
+ 	text-align: center;
+ }
+
+
+p {
+	text-align: center;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+ul.menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #FF5349;
+}
+
+ul {
+	color: #F0F0F1;
+}
+
+li {
+	float: center;
+}
+
+footer {
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	background-color: #4F80E1;
+	color: #FF5349;
+}
+
+a {
+	text-decoration:none;
+	color: #F0F0F1;
+}
+
+nav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+nav li {
+	float: left;
+	text-align: center;
+}
+
+nav li a:hover {
+	padding: 14px;
+	background-color: #292C44;
+
+}
+body,html {
+	padding: 0;
+	margin: 0;
+}
+
+form {
+	text-align: center;
+}
+
+
+.grid {
+display: grid;
+padding-top: 1%;
+padding-bottom: 1%;
+padding-left: 3%;
+padding-right: 3%;
+grid-template: 2fr 2fr/2fr 2fr 2fr; 
+grid-column-gap: 10px;
+grid-row-gap: 10px;
+}
+
+#cart {
+	position:absolute; top:0; right:0;	
+}
+
+
+@media screen and (max-width: 480px) {
+	li {
+		width: 100%;
+	}
+
+}
+
+
+
+
+
+
+
+
